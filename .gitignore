@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Storage (user data, not committed)
+storage/uploads/*
+storage/audio/*
+storage/transcripts/*
+storage/clips/*
+storage/exports/*
+
+# Keep storage directories via .gitkeep
+!storage/uploads/.gitkeep
+!storage/audio/.gitkeep
+!storage/transcripts/.gitkeep
+!storage/clips/.gitkeep
+!storage/exports/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Distribution
+*.egg-info/
+dist/
+build/
+
+# Docker
+docker/data/
+
+# Misc
+*.bak
+*.tmp
