@@ -10,6 +10,7 @@ from app.core.config import settings
 from app.api.health import router as health_router
 from app.api.videos import router as videos_router
 from app.api.transcription import router as transcription_router
+from app.api.clips import router as clips_router
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -67,3 +68,4 @@ app.add_middleware(
 app.include_router(health_router, prefix="/api")
 app.include_router(videos_router, prefix="/api")
 app.include_router(transcription_router, prefix="/api")
+app.include_router(clips_router, prefix="/api")
