@@ -11,6 +11,7 @@ from app.api.health import router as health_router
 from app.api.videos import router as videos_router
 from app.api.transcription import router as transcription_router
 from app.api.clips import router as clips_router
+from app.api.export import router as export_router
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -69,3 +70,4 @@ app.include_router(health_router, prefix="/api")
 app.include_router(videos_router, prefix="/api")
 app.include_router(transcription_router, prefix="/api")
 app.include_router(clips_router, prefix="/api")
+app.include_router(export_router, prefix="/api")
